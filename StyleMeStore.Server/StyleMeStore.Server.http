@@ -1,0 +1,6 @@
+@StyleMeStore.Server_HostAddress = http://localhost:5106
+
+GET {{StyleMeStore.Server_HostAddress}}/ProductItems/
+Accept: application/json
+
+###

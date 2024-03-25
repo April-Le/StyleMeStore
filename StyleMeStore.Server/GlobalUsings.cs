@@ -1,0 +1,9 @@
+﻿global using Bogus;
+global using MediatR;
+global using Microsoft.AspNetCore.Mvc;
+global using Microsoft.EntityFrameworkCore;
+global using StyleMeStore.Server.Contracts.Responses;
+global using StyleMeStore.Server.Models;
+global using StyleMeStore.Server.Models.Entities;
+global using StyleMeStore.Server.Queries;
+global using System.ComponentModel.DataAnnotations;

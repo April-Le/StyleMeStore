@@ -1,0 +1,27 @@
+<img src="assets/logo.png" alt="Style Me Store" />
+<h1 id="tableLabel">Product List</h1>
+
+<p *ngIf="!productItems"><em>Loading...</em></p>
+
+<table *ngIf="productItems">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Type</th>
+            <th>Size</th>
+            <th>Colour</th>
+            <th>Price</th>
+            <th>Available On</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let productItem of productItems">
+            <td>{{ productItem.id }}</td>
+            <td>{{ productItem.type }}</td>
+            <td>{{ productItem.size }}</td>
+            <td>{{ productItem.colour }}</td>
+            <td>{{ productItem.price | currency:'AUD':true }}</td>
+            <td>{{ productItem.availableOn }}</td>
+        </tr>
+    </tbody>
+</table>
